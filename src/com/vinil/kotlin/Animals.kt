@@ -1,9 +1,9 @@
 package com.vinil.kotlin
 
-open class Animal {
-    open val image = ""
-    open val food = ""
-    open val habitat = ""
+abstract class Animal {
+    abstract val image :String
+    abstract val food :String
+    abstract val habitat :String
     var hunger = 10
 
     open fun makeNoise(){
@@ -35,7 +35,7 @@ class Hippo:Animal(){
     }
 }
 
-open class Canine:Animal(){
+abstract class Canine:Animal(){
     override fun roam(){
         println("The Canine is roaming")
     }
