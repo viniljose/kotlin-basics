@@ -1,6 +1,9 @@
 package com.vinil.kotlin
 
-abstract class Animal {
+interface Roamable {
+    fun roam()
+}
+abstract class Animal : Roamable{
     abstract val image :String
     abstract val food :String
     abstract val habitat :String
@@ -10,7 +13,7 @@ abstract class Animal {
         println("The Annimal is making noice")
     }
 
-    open fun roam(){
+    override fun roam(){
         println("The Animal is roaming")
     }
 
@@ -56,6 +59,12 @@ class Wolf:Canine(){
 class Vet {
     fun giveShot(animal: Animal){
         animal.makeNoise()
+    }
+}
+
+class Vehicle : Roamable{
+    override fun roam() {
+        println("The Vehicle is Roaming")
     }
 }
 
