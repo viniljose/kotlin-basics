@@ -22,5 +22,8 @@ Before you can use a class as a superclass, you must declare it `open`. You must
 Use `:` to specify a subclass’s superclass.  
 Override properties and functions in the subclass by prefixing them with `override`.  
 Overridden functions and properties stay open until they’re declared `final`.  
-Class `Any` is the mother of all classes:
+Class `Any` is the mother of all classes  
+A `data` class is one that lets you create objects whose main purpose is to store data.
+You define a data class by prefixing a normal class definition with the `data` keyword.
+The `copy` function lets you copy a data object, altering some of its properties. The original object remains intact.
 
