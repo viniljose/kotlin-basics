@@ -25,5 +25,5 @@ Overridden functions and properties stay open until they’re declared `final`.
 Class `Any` is the mother of all classes  
 A `data` class is one that lets you create objects whose main purpose is to store data.
 You define a data class by prefixing a normal class definition with the `data` keyword.
-The `copy` function lets you copy a data object, altering some of its properties. The original object remains intact.
-
+The `copy` function lets you copy a data object, altering some of its properties. The original object remains intact.  
+The `===` operator always lets you check whether two variables refer to the same underlying object.
