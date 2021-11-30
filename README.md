@@ -22,4 +22,5 @@ Before you can use a class as a superclass, you must declare it `open`. You must
 Use `:` to specify a subclass’s superclass.  
 Override properties and functions in the subclass by prefixing them with `override`.  
 Overridden functions and properties stay open until they’re declared `final`.  
+Class `Any` is the mother of all classes:
 
